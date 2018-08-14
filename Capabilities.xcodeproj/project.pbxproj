@@ -19,6 +19,8 @@
 		7D8FC17821189BCB00F40C73 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FC17721189BCB00F40C73 /* AnimationViewController.swift */; };
 		7D9A203D211A16EE00B5BAE6 /* MotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A203C211A16EE00B5BAE6 /* MotionViewController.swift */; };
 		7DAB0E902115F8140086A41C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB0E8F2115F8140086A41C /* TableViewController.swift */; };
+		7DC8A603211D7BC500E81C4D /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8A602211D7BC500E81C4D /* NetworkViewController.swift */; };
+		7DC8A606211DA59800E81C4D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC8A605211DA59800E81C4D /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		7D8FC17721189BCB00F40C73 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		7D9A203C211A16EE00B5BAE6 /* MotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewController.swift; sourceTree = "<group>"; };
 		7DAB0E8F2115F8140086A41C /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7DC8A602211D7BC500E81C4D /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		7DC8A605211DA59800E81C4D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC8A606211DA59800E81C4D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,7 @@
 			children = (
 				7D19329D21031737004E5FC7 /* Capabilities */,
 				7D19329C21031737004E5FC7 /* Products */,
+				7DC8A604211DA59800E81C4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +79,7 @@
 				7D2F7F1D2107E55B00E07E30 /* DrawView.swift */,
 				7D2F7F1F2108197400E07E30 /* MapViewController.swift */,
 				7D1932A221031737004E5FC7 /* Main.storyboard */,
+				7DC8A602211D7BC500E81C4D /* NetworkViewController.swift */,
 				7D6F7382210974EB00E97813 /* NoteViewController.swift */,
 				7D1932A821031738004E5FC7 /* Assets.xcassets */,
 				7D1932AA21031738004E5FC7 /* LaunchScreen.storyboard */,
@@ -83,6 +90,14 @@
 				7D9A203C211A16EE00B5BAE6 /* MotionViewController.swift */,
 			);
 			path = Capabilities;
+			sourceTree = "<group>";
+		};
+		7DC8A604211DA59800E81C4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DC8A605211DA59800E81C4D /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +174,7 @@
 				7D1932A121031737004E5FC7 /* ViewController.swift in Sources */,
 				7DAB0E902115F8140086A41C /* TableViewController.swift in Sources */,
 				7D19329F21031737004E5FC7 /* AppDelegate.swift in Sources */,
+				7DC8A603211D7BC500E81C4D /* NetworkViewController.swift in Sources */,
 				7D2F7F1E2107E55B00E07E30 /* DrawView.swift in Sources */,
 				7D2F7F202108197400E07E30 /* MapViewController.swift in Sources */,
 				7D6F7383210974EB00E97813 /* NoteViewController.swift in Sources */,
