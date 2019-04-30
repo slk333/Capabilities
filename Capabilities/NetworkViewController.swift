@@ -3,21 +3,7 @@ import WebKit
 
 class NetworkViewController: UIViewController {
     
-    
     @IBOutlet weak var webView: WKWebView!
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     @IBOutlet weak var textView: UITextView!
@@ -63,7 +49,10 @@ class NetworkViewController: UIViewController {
         urlRequest.timeoutInterval = 3
         let dataTask=URLSession.shared.dataTask(with: urlRequest){data,response,error in
         
-             self.webView.load(urlRequest)
+            DispatchQueue.main.async {
+                  self.webView.load(urlRequest)
+            }
+          
             
             
             guard let validResponse = response else{

@@ -1,11 +1,3 @@
-//
-//  MapViewController.swift
-//  Capabilities
-//
-//  Created by Antoine Weber on 25/07/2018.
-//  Copyright © 2018 Antoine Weber. All rights reserved.
-//
-
 import UIKit
 import MapKit
 
