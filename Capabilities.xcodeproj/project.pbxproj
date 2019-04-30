@@ -74,20 +74,20 @@
 		7D19329D21031737004E5FC7 /* Capabilities */ = {
 			isa = PBXGroup;
 			children = (
+				7D1932A221031737004E5FC7 /* Main.storyboard */,
 				7D19329E21031737004E5FC7 /* AppDelegate.swift */,
 				7D1932A021031737004E5FC7 /* ViewController.swift */,
 				7D2F7F1D2107E55B00E07E30 /* DrawView.swift */,
 				7D2F7F1F2108197400E07E30 /* MapViewController.swift */,
-				7D1932A221031737004E5FC7 /* Main.storyboard */,
 				7DC8A602211D7BC500E81C4D /* NetworkViewController.swift */,
 				7D6F7382210974EB00E97813 /* NoteViewController.swift */,
-				7D1932A821031738004E5FC7 /* Assets.xcassets */,
-				7D1932AA21031738004E5FC7 /* LaunchScreen.storyboard */,
-				7D1932AD21031738004E5FC7 /* Info.plist */,
-				7D1932A521031737004E5FC7 /* Capabilities.xcdatamodeld */,
 				7DAB0E8F2115F8140086A41C /* TableViewController.swift */,
 				7D8FC17721189BCB00F40C73 /* AnimationViewController.swift */,
 				7D9A203C211A16EE00B5BAE6 /* MotionViewController.swift */,
+				7D1932A521031737004E5FC7 /* Capabilities.xcdatamodeld */,
+				7D1932AA21031738004E5FC7 /* LaunchScreen.storyboard */,
+				7D1932A821031738004E5FC7 /* Assets.xcassets */,
+				7D1932AD21031738004E5FC7 /* Info.plist */,
 			);
 			path = Capabilities;
 			sourceTree = "<group>";
