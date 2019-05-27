@@ -338,6 +338,7 @@
                         <segue destination="6Gk-Ju-Cfl" kind="relationship" relationship="viewControllers" id="SuH-48-wxV"/>
                         <segue destination="NP4-mz-y6v" kind="relationship" relationship="viewControllers" id="Mw7-Hl-d10"/>
                         <segue destination="B4w-WD-73L" kind="relationship" relationship="viewControllers" id="yMN-Ou-C4x"/>
+                        <segue destination="ldn-cG-6tX" kind="relationship" relationship="viewControllers" id="V5z-bh-Tac"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="goc-El-ARY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -559,14 +560,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u4z-ow-xhF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Raw HTML" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u4z-ow-xhF">
                                 <rect key="frame" x="16" y="155" width="343" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://slk333.github.io/" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6f-TX-nXW">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://aweb33.netlify.com/" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6f-TX-nXW">
                                 <rect key="frame" x="16" y="117" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -575,13 +575,7 @@
                                     <action selector="connect:" destination="ZGR-43-NQp" eventType="primaryActionTriggered" id="hNv-mF-mAf"/>
                                 </connections>
                             </textField>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="vh8-Pz-51b">
-                                <rect key="frame" x="112" y="405" width="150" height="2"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </progressView>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ip-L8-23E">
+                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ip-L8-23E">
                                 <rect key="frame" x="16" y="262" width="343" height="459"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -592,15 +586,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vh8-Pz-51b" firstAttribute="top" secondItem="u4z-ow-xhF" secondAttribute="bottom" constant="167" id="0ag-ou-Pp7"/>
                             <constraint firstItem="Ric-CL-ZQG" firstAttribute="trailing" secondItem="4Ip-L8-23E" secondAttribute="trailing" constant="16" id="1or-hm-HVs"/>
                             <constraint firstItem="p6f-TX-nXW" firstAttribute="top" secondItem="Ric-CL-ZQG" secondAttribute="top" constant="29" id="5AR-EA-AKM"/>
-                            <constraint firstItem="vh8-Pz-51b" firstAttribute="centerX" secondItem="pJu-cb-lMd" secondAttribute="centerX" id="78a-V5-MYd"/>
                             <constraint firstItem="Ric-CL-ZQG" firstAttribute="trailing" secondItem="p6f-TX-nXW" secondAttribute="trailing" constant="16" id="9jF-fO-cSA"/>
                             <constraint firstItem="4Ip-L8-23E" firstAttribute="leading" secondItem="Ric-CL-ZQG" secondAttribute="leading" constant="16" id="CBh-kU-T4J"/>
-                            <constraint firstItem="4Ip-L8-23E" firstAttribute="top" secondItem="vh8-Pz-51b" secondAttribute="bottom" constant="-145" id="Gb6-GQ-jX0"/>
                             <constraint firstItem="u4z-ow-xhF" firstAttribute="top" secondItem="p6f-TX-nXW" secondAttribute="bottom" constant="8" id="JXO-qo-4dT"/>
-                            <constraint firstItem="vh8-Pz-51b" firstAttribute="centerY" secondItem="pJu-cb-lMd" secondAttribute="centerY" id="P4N-FK-TME"/>
                             <constraint firstItem="u4z-ow-xhF" firstAttribute="leading" secondItem="Ric-CL-ZQG" secondAttribute="leading" constant="16" id="bHu-g2-MzT"/>
                             <constraint firstItem="Ric-CL-ZQG" firstAttribute="bottom" secondItem="4Ip-L8-23E" secondAttribute="bottom" constant="8" id="lbY-JH-uDY"/>
                             <constraint firstItem="Ric-CL-ZQG" firstAttribute="trailing" secondItem="u4z-ow-xhF" secondAttribute="trailing" constant="16" id="sqh-yl-yRP"/>
@@ -617,6 +607,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGP-Wo-ra6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3052" y="806.89655172413802"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="fz7-1L-3yN">
+            <objects>
+                <viewController id="Zj1-AW-gI7" customClass="NotificationVC" customModule="Capabilities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PT7-za-OkR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-Ml-YPb">
+                                <rect key="frame" x="45" y="383" width="285" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
+                                <state key="normal" title="Queue a notification"/>
+                                <connections>
+                                    <action selector="queueNotification:" destination="Zj1-AW-gI7" eventType="touchUpInside" id="b2O-FA-qw5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zp1-Ml-YPb" firstAttribute="centerX" secondItem="PT7-za-OkR" secondAttribute="centerX" id="D9g-Lo-xYM"/>
+                            <constraint firstItem="Zp1-Ml-YPb" firstAttribute="centerY" secondItem="PT7-za-OkR" secondAttribute="centerY" id="NSF-uI-8OL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nk6-GA-9OC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notifications" id="2yV-0Z-DNV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5H-02-aPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3724" y="820.93596059113304"/>
         </scene>
         <!--Geo-->
         <scene sceneID="jdD-s4-OEd">
@@ -741,6 +761,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eO0-Sn-VHT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3038" y="163"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="Qou-kb-QFE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ldn-cG-6tX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="tabBar" id="IlW-32-7Ms"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="XwB-6X-FNc">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zj1-AW-gI7" kind="relationship" relationship="rootViewController" id="Nx9-Cs-80J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOA-zS-5hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3724" y="163"/>
         </scene>
     </scenes>
     <resources>
