@@ -7,7 +7,7 @@ class NotificationVC: UIViewController, UNUserNotificationCenterDelegate{
         
         print("received notification while foreground")
         
-        completionHandler(.alert)
+        completionHandler(.sound)
         center.removeAllDeliveredNotifications()
         print(notification.request.content.title)
   
@@ -43,6 +43,7 @@ class NotificationVC: UIViewController, UNUserNotificationCenterDelegate{
         let content = UNMutableNotificationContent()
         content.title = "Here to serve you"
         content.body = "The notification you ordered"
+        content.badge = 1
         
         // Configure the recurring date.
         let date = Calendar.current.date(byAdding: .second, value: 10, to: Date())!
@@ -55,6 +56,7 @@ class NotificationVC: UIViewController, UNUserNotificationCenterDelegate{
         let uuidString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuidString,
                                             content: content, trigger: trigger)
+      
         
         // Schedule the request with the system.
         let notificationCenter = UNUserNotificationCenter.current()
@@ -84,10 +86,18 @@ class NotificationVC: UIViewController, UNUserNotificationCenterDelegate{
     override func viewDidAppear(_ animated: Bool) {
         
         
-        notificationCenter.requestAuthorization(options: [.alert, .sound])
+        notificationCenter.requestAuthorization(options: [.alert, .sound,.badge])
         { (granted, error) in
             
         }
+        
+        
+        
+        
+        notificationCenter.removeAllDeliveredNotifications()
+       UIApplication.shared.applicationIconBadgeNumber = 0
+
     }
+
     
 }
